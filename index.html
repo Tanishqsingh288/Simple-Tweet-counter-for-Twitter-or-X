@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Centered Box with Header</title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header text-white text-center p-4">
+            <h1>Tweet charachter counter </h1>
+        </header>
+
+        <div class="image">
+            <img src=".\Xlogo.png" alt>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container d-flex align-items-center">
+            <div class="box text-center p-4">
+                <h2 id="res" class="box-header bg p-3">Enter your tweet here
+                    !</h2>
+                <form>
+                    <div>
+                        <label for="longstring"></label>
+                        <input id="input" type="text"
+                            name="longstring" maxlength="280" />
+                        <span class="validity"></span>
+                    </div>
+                    <div>
+                        <button id="submitbtn" class="submitbutton"
+                            onclick="showResult()">Check Count</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="source.js"></script>
+    </body>
+</html>

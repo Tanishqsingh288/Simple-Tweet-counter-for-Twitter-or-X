@@ -1,0 +1,119 @@
+/* Global styles */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #313131;
+}
+
+.header {
+    background-color: #525252;
+    padding: 10px;
+}
+
+.container {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin-top: 0%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-header {
+    background-color: #eeeeee;
+}
+
+body header {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: bold;
+    font-variation-settings:
+        "wdth" 1000;
+}
+
+.image {
+    margin-left: 42vw;
+    margin-top: 5vh;
+}
+
+.submitbutton {
+    margin-top: 2vh;
+    width: 8vw;
+    height: 3.5vh;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: bold;
+    font-variation-settings:
+        "width" 1000;
+}
+#input{
+    width: 450px;
+}
+
+.submitbutton:hover {
+    background-color: #525252;
+    color: #dddddd;
+    margin-top: 2vh;
+    width: 8vw;
+    height: 3.5vh;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: bold;
+    font-variation-settings:
+        "wdth" 1000;
+}
+
+/* Media query for devices with a maximum width of 720px */
+@media only screen and (max-width: 720px) {
+    /* Adjust styles for smaller screens */
+   .container {
+        height: 50%; /* Increase height to accommodate smaller screens */
+    }
+
+   .box {
+        max-width: 300px; /* Reduce max-width to fit smaller screens */
+        padding: 5px; /* Reduce padding to fit smaller screens */
+    }
+
+   .image {
+        margin-left: 15vw; /* Adjust margin to fit smaller screens */
+        margin-top: 3vh; /* Adjust margin to fit smaller screens */
+    }
+
+   .submitbutton {
+        width: fit-content; /* Increase width to fit smaller screens */
+        height: 4vh; /* Increase height to fit smaller screens */
+    }
+    .submitbutton:hover {
+        background-color: #525252;
+        color: #dddddd;
+        margin-top: 2vh;
+        width: fit-content;
+        height: 4vh;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: bold;
+        font-variation-settings:
+            "wdth" 1000;
+    }
+    #input{
+        width: 250px;
+    }
+    .p-4 {
+        padding: 5rem ;
+    }
+
+}
